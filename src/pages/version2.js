@@ -11,9 +11,8 @@ import HorizontalTitle from '../components/horizontalTitle';
 import HorizontalButtonsContainer from '../components/horizontalButtonsContainer';
 
 import ndexLogo from '../images/ndex.png';
-import ndexLogoUnderline from '../images/ndexLogoUnderline.png';
 
-import styles from './pageStyles/index.module.css';
+import './pageStyles/index.module.css';
 
 const contrastBackgroundColor = 'rgba(65,182,255, 0.25)';
 const contrastTextColor = 'black';
@@ -33,12 +32,18 @@ const IndexPage = () => (
         }
         subtitle={
           <span style={{ display: 'inline-block' }}>
-            View in <a href='#ndex' />
+            View in{' '}
             <a href='#ndex'>
-              <div className={styles.ndexLogo}>
-                <img src={ndexLogo} className={styles.noUnderlineLogo} />
-                <img src={ndexLogoUnderline} className={styles.underlineLogo} />
-              </div>
+              <img
+                src={ndexLogo}
+                alt='NDEx Logo'
+                style={{
+                  height: '1.249em',
+                  marginBottom: '0',
+                  position: 'relative',
+                  top: '0.3em',
+                }}
+              />
             </a>
             :
           </span>

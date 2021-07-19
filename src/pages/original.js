@@ -9,11 +9,10 @@ import ButtonLink from '../components/buttonLink';
 
 import HorizontalTitle from '../components/horizontalTitle';
 import HorizontalButtonsContainer from '../components/horizontalButtonsContainer';
+import VerticalTitle from '../components/verticalTitle';
+import VerticalButtonsContainer from '../components/verticalButtonsContainer';
 
-import ndexLogo from '../images/ndex.png';
-import ndexLogoUnderline from '../images/ndexLogoUnderline.png';
-
-import styles from './pageStyles/index.module.css';
+import './pageStyles/index.module.css';
 
 const contrastBackgroundColor = 'rgba(65,182,255, 0.25)';
 const contrastTextColor = 'black';
@@ -31,34 +30,60 @@ const IndexPage = () => (
             <span style={{ display: 'inline-block' }}>of Breast Cancer</span>
           </>
         }
-        subtitle={
-          <span style={{ display: 'inline-block' }}>
-            View in <a href='#ndex' />
-            <a href='#ndex'>
-              <div className={styles.ndexLogo}>
-                <img src={ndexLogo} className={styles.noUnderlineLogo} />
-                <img src={ndexLogoUnderline} className={styles.underlineLogo} />
-              </div>
-            </a>
-            :
-          </span>
-        }
+        subtitle='View in NDEx:'
       />
       <HorizontalButtonsContainer>
         <ButtonLink
           text='Breast cancer network'
           link='http://ndexbio.org/?#/network/e89ad762-ab4b-11ea-aaef-0ac135e8bacf'
           vertical={false}
+          tooltip={true}
+          tooltipPosition='bottom'
+          tooltipText={
+            <span style={{ display: 'block' }}>
+              {
+                'View the "Breast cancer protein-protein interaction network" in '
+              }
+              <a href='#ndex' style={{ color: 'rgba(0, 0, 0, 0.8)' }}>
+                NDEx
+              </a>
+              {'.'}
+            </span>
+          }
         />
         <ButtonLink
           text='BRCA1 interactome'
           link='http://ndexbio.org/?#/network/34eec19d-ab5a-11ea-aaef-0ac135e8bacf'
           vertical={false}
+          tooltip={true}
+          tooltipPosition='bottom'
+          tooltipText={
+            <span style={{ display: 'block' }}>
+              {'View\u00A0the\u00A0"BRCA1\u00A0interactome" network in '}
+              <a href='#ndex' style={{ color: 'rgba(0, 0, 0, 0.8)' }}>
+                NDEx
+              </a>
+              {'.'}
+            </span>
+          }
         />
         <ButtonLink
           text='MCF7 and MDA-MB-231 shared network'
           link='http://ndexbio.org/?#/network/e89ad762-ab4b-11ea-aaef-0ac135e8bacf'
           vertical={false}
+          tooltip={true}
+          tooltipPosition='bottom'
+          tooltipText={
+            <span style={{ display: 'block' }}>
+              {
+                'View the "Shared interactions between MCF7 and MDA-MB-231 cells" network in '
+              }
+              <a href='#ndex' style={{ color: 'rgba(0, 0, 0, 0.8)' }}>
+                NDEx
+              </a>
+              {'.'}
+            </span>
+          }
         />
       </HorizontalButtonsContainer>
     </TopPanel>

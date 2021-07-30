@@ -26,7 +26,7 @@ const IndexPage = () => (
         title={
           <>
             <span style={{ display: 'inline-block' }}>
-              The Protein Interaction Landscape
+              The Protein Interaction Landscape{' '}
             </span>
             <span style={{ display: 'inline-block' }}>of Breast Cancer</span>
           </>

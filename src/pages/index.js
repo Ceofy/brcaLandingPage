@@ -20,7 +20,7 @@ const contrastTextColor = 'black';
 
 const IndexPage = () => (
   <Layout backgroundColor={contrastBackgroundColor}>
-    <SEO title='The Protein Interaction Landscape of Breast Cancer' />
+    <SEO title='The protein interaction landscape of breast cancer' />
     <TopPanel>
       <HorizontalTitle
         title={
@@ -47,42 +47,41 @@ const IndexPage = () => (
       <HorizontalButtonsContainer>
         <ButtonLink
           text='Breast cancer network'
-          link='http://ndexbio.org/?#/network/e89ad762-ab4b-11ea-aaef-0ac135e8bacf'
+          link='https://www.ndexbio.org/viewer/networks/e89ad762-ab4b-11ea-aaef-0ac135e8bacf'
           vertical={false}
         />
         <ButtonLink
           text='BRCA1 interactome'
-          link='http://ndexbio.org/?#/network/34eec19d-ab5a-11ea-aaef-0ac135e8bacf'
+          link='https://www.ndexbio.org/viewer/networks/34eec19d-ab5a-11ea-aaef-0ac135e8bacf'
           vertical={false}
         />
         <ButtonLink
-          text='MCF7 and MDA-MB-231 shared network'
-          link='http://ndexbio.org/?#/network/e89ad762-ab4b-11ea-aaef-0ac135e8bacf'
+          text='MCF7 & MDA-MB-231 shared network'
+          link='https://www.ndexbio.org/viewer/networks/bd4c9c05-ab4c-11ea-aaef-0ac135e8bacf'
           vertical={false}
         />
       </HorizontalButtonsContainer>
     </TopPanel>
 
     <Panel backgroundColor='white' textColor='rgba(0, 0, 0, 0.8)'>
-      <h2>The protein interaction landscape of breast cancer</h2>
+      <h2>Abstract</h2>
       <p>
-        Cancers have been associated with diverse sets of genomic alterations,
-        many of which are rare with uncertain significance. To understand the
-        cellular mechanisms impacted by such alterations in breast invasive
-        carcinoma, we have applied affinity-purification mass spectrometry to
-        delineate comprehensive biophysical interaction networks for 40
-        frequently altered breast cancer proteins. These networks interconnect
-        and enrich for common and rare cancer mutations; they are also
-        substantially re-wired by mutations, including in TP53 and PIK3CA, and
-        across cancerous and non-cancerous cell contexts. Our analysis
-        identifies a novel AKT-interacting protein, S100A3, which we find
-        activates AKT signaling and is predictive of clinical response to AKT
-        inhibitors. Similarly, UBE2N emerges as a BRCA1 interactor predictive of
-        clinical response to inhibition of PARP. Finally, we show that
-        Spinophilin interacts with and dephosphorylates BRCA1 to promote DNA
-        double strand break repair. Thus, cancer protein interaction landscapes
-        provide a framework for recognizing oncogenic drivers and drug
-        vulnerabilities.
+        Cancers have been associated with a diverse array of genomic
+        alterations. To help mechanistically understand such alterations in
+        breast invasive carcinoma, we have applied affinity-purification mass
+        spectrometry to delineate comprehensive biophysical interaction networks
+        for 40 frequently altered breast cancer (BC) proteins, with and without
+        relevant mutations, across three human breast cell lines. These networks
+        identify cancer-specific protein-protein interactions (PPIs),
+        interconnect and enrich for common and rare cancer mutations, and are
+        substantially rewired by the introduction of key BC mutations. Our
+        analysis identified PIK3CA-interacting proteins which repress AKT
+        signaling and has uncovered USP28 and UBE2N as functionally relevant
+        interactors of BRCA1. We also show that the PP1 phosphatase regulatory
+        subunit, Spinophilin, interacts with and regulates dephosphorylation of
+        BRCA1 to promote DNA double-strand break repair. Thus, PPI landscapes
+        provide a powerful framework for mechanistically interpreting disease
+        genomic data and can identify valuable new therapeutic targets.
       </p>
     </Panel>
     <Panel

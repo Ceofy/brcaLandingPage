@@ -28,12 +28,10 @@ h2::before {
 }
 
 .logo {
-  height: 1.249em;
-  margin-bottom: 0;
-  position: relative;
-  top: 0.3em;
-  left: 0;
   position: absolute;
+  margin-bottom: 0;
+  left: 0;
+  top: 0.24em;
 }
 
 .noUnderlineLogo {
@@ -54,8 +52,8 @@ h2::before {
 }
 
 .ndexLogo {
-  height: 37.47px;
-  width: 178.58px;
-  display: inline-block;
+  height: 40px;
+  width: 200px;
   position: relative;
+  display: inline-block;
 }

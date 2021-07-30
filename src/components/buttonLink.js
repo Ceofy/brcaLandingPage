@@ -3,19 +3,22 @@ import PropTypes from 'prop-types';
 
 import styles from './componentStyles/buttonLink.module.css';
 
-const ButtonLink = (props) => (
-  <span>
-    <div className={props.tooltip ? styles.tooltip : ''}>
-      <form
-        target='_blank'
-        rel='noopener noreferrer'
-        action={props.link}
-        className={props.vertical ? styles.vertical : styles.horizontal}
-      >
-        <button type='submit'>
-          <span className={styles.buttonText}>{props.text}</span>
-        </button>
-      </form>
+const ButtonLink = (props) => {
+  const containerStyles = [styles.container];
+  if (props.tooltip) {
+    containerStyles.push(styles.tooltip);
+  }
+  if (props.vertical) {
+    containerStyles.push(styles.vertical);
+  } else {
+    containerStyles.push(styles.horizontal);
+  }
+
+  return (
+    <div className={containerStyles.join(' ')}>
+      <a href={props.link} target='_blank' className={styles.noUnderline}>
+        {props.text}
+      </a>
       <span
         className={[
           styles.tooltipText,
@@ -31,21 +34,16 @@ const ButtonLink = (props) => (
         ].join(' ')}
       />
     </div>
-  </span>
-);
+  );
+};
 
 ButtonLink.propTypes = {
-  text: PropTypes.string,
+  text: [PropTypes.string, PropTypes.node],
   link: PropTypes.string,
   vertical: PropTypes.bool,
   tooltip: PropTypes.bool,
-  tooltipText: PropTypes.node,
   tooltipPosition: PropTypes.string,
-};
-
-ButtonLink.defaultProps = {
-  vertical: true,
-  tooltip: false,
+  tooltipText: [PropTypes.string, PropTypes.node],
 };
 
 export default ButtonLink;

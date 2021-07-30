@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: 'breastcancer',
   siteMetadata: {
-    title: `CCMI "Protein Interaction Landscapeof Breast Cancer" Project Page`,
+    title: `CCMI "Protein Interaction Landscape of Breast Cancer" Project Page`,
     description: `CCMI project page for "The Protein Interaction Landscape of Breast Cancer"`,
     author: `UCSD Ideker Lab`,
   },

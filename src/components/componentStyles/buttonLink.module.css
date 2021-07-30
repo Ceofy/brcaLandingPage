@@ -1,13 +1,10 @@
-@import '../../constants.css';
-
 :root {
   --tooltip-width: 215px;
   --tooltip-height: 70px;
   --arrow-size: 10px;
   --tooltip-offset: 20px;
   --tooltip-border-radius: 15px;
-  --button-side-spacing: 1em;
-  --button-width: 260px;
+  --button-side-spacing: 0.5em;
 }
 
 .vertical {
@@ -15,39 +12,39 @@
 }
 
 .horizontal {
-  margin: 0 var(--button-side-spacing) var(--button-bottom-spacing);
+  margin: 0 var(--button-side-spacing) calc(var(--button-side-spacing) * 2);
   flex-grow: 0;
   flex-shrink: 0;
 }
 
-button {
-  font-style: normal;
+.container {
   font-weight: 100;
-  font-size: 22px;
-  line-height: 22px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: var(--button-width);
+  font-size: 1.4em;
+  width: 260px;
   height: 63px;
-  vertical-align: middle;
   background-color: rgb(255, 140, 0);
-  color: white;
-  border: none;
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em;
 }
 
-button:hover {
+.container:hover {
   background-color: #ffffff;
-  color: rgb(255, 140, 0, 0.9);
+  color: rgb(255, 140, 0, 0.9) !important;
   font-weight: 800;
   cursor: pointer;
   letter-spacing: -0.55px;
   border-radius: 1px;
 }
 
-.buttonText {
-  display: inline-block;
-  margin: auto;
+.container a {
+  color: inherit;
+}
+
+.noUnderline {
+  text-decoration: none;
 }
 
 .tooltip {

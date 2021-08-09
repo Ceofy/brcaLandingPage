@@ -60,6 +60,11 @@ const IndexPage = () => (
           link='https://www.ndexbio.org/viewer/networks/bd4c9c05-ab4c-11ea-aaef-0ac135e8bacf'
           vertical={false}
         />
+        <ButtonLink
+          text='Full network set'
+          link='https://www.ndexbio.org/#/networkset/4423340d-e8e3-11eb-b666-0ac135e8bacf'
+          vertical={false}
+        />
       </HorizontalButtonsContainer>
     </TopPanel>
 
